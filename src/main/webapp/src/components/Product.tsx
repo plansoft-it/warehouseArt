@@ -9,14 +9,9 @@ export type ProductType = {
 function Product(props: { prod: ProductType }) {
 
 	return (
-		<div className="Product">
-			<p> 
-				{props.prod.id} <br />
-			 	Description: {props.prod.description} <br />
-			 	Price: {props.prod.price} <br />
-			 	Avaiable amount: {props.prod.amount} <br /> 
-			</p>
-		</div>
+		<p>
+			Description: {props.prod.description} <br />
+		</p>
 	);
 }
 
