@@ -1,5 +1,5 @@
 
-import { useDisclosure } from '@chakra-ui/react';
+import { Button, useDisclosure } from '@chakra-ui/react';
 import { useState } from 'react'
 import Details from './Details';
 import Product, { ProductType } from './Product'
@@ -13,10 +13,10 @@ function ProductList(props: { products: ProductType[] }) {
 		<div>
 			{props.products.map((product) => {
 				return (
-					<>
-						<Product key={product.id} prod={product} />
-						<button onClick={() => { setProd(product); onOpen(); }}> Details </button>
-					</>
+					<div key={product.id} className="card">
+						<Product prod={product} />
+						<Button onClick={() => { setProd(product); onOpen(); }}> Details </Button>
+					</div>
 				)
 			})}
 			<Details prod={prod} isOpen={isOpen} onClose={onClose} />

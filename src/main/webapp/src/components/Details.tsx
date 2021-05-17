@@ -1,4 +1,4 @@
-import { Modal, ModalOverlay, ModalContent, ModalFooter, ModalBody, ModalCloseButton, Button, } from "@chakra-ui/react"
+import { Modal, ModalOverlay, ModalContent, ModalBody, ModalCloseButton } from "@chakra-ui/react"
 import { ProductType } from './Product'
 
 function Details(props: { prod: ProductType, isOpen: boolean, onClose: () => void }) {

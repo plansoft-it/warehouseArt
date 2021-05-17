@@ -1,4 +1,5 @@
 
+import { Container } from '@chakra-ui/layout';
 import { useState, useEffect } from 'react'
 import ProductList from './ProductList';
 
@@ -19,9 +20,9 @@ function ProductLoader() {
 	}, [])
 
 	return (
-		<div >
+		<Container centerContent>
 			<ProductList products={products} />
-		</div>
+		</Container>
 	)
 }
 
