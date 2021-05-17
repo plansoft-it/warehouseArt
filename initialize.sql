@@ -24,6 +24,3 @@ INSERT INTO product(id, price, description, amount) VALUES (default, 8.25, "ganc
 INSERT INTO product(id, price, description, amount) VALUES (default, 12.50, "torcia", 39);
 INSERT INTO product(id, price, description, amount) VALUES (default, 10.80, "batteria ricaricabile", 88);
 INSERT INTO product(id, price, description, amount) VALUES (default, 18.00, "trapano", 3);
-
-
-SELECT * FROM product;
