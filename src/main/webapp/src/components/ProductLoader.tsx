@@ -19,7 +19,7 @@ function ProductLoader() {
 	}, [])
 
 	return (
-		<div className="List">
+		<div >
 			<ProductList products={products} />
 		</div>
 	)
