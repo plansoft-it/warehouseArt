@@ -10,7 +10,8 @@ function Product(props: { prod: ProductType }) {
 
 	return (
 		<p>
-			Description: {props.prod.description} <br />
+			Description: <br /> 
+			{props.prod.description} <br />
 		</p>
 	);
 }
