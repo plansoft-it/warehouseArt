@@ -1,4 +1,3 @@
-
 import { Container } from '@chakra-ui/layout';
 import { useState, useEffect } from 'react'
 import ProductList from './ProductList';
@@ -8,7 +7,7 @@ function ProductLoader() {
 	const [products, setProducts] = useState([]);
 
 	useEffect(() => {
-		fetch("https://jsonplaceholder.typicode.com/posts")
+		fetch("http://localhost:8080/products")
 			.then(response => {
 				if (!response.ok)
 					throw Error(response.statusText);

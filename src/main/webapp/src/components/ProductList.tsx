@@ -1,4 +1,3 @@
-
 import { Button, useDisclosure } from '@chakra-ui/react';
 import { useState } from 'react'
 import Details from './Details';
@@ -6,7 +5,7 @@ import Product, { ProductType } from './Product'
 
 function ProductList(props: { products: ProductType[] }) {
 	const { isOpen, onOpen, onClose } = useDisclosure();
-	const initialProd: ProductType = { id: -1, price: -1, amount: -1, description: "" }
+	const initialProd: ProductType = { id: -1, price: -1, ammount: -1, description: "" }
 	const [prod, setProd] = useState(initialProd);
 
 	return (

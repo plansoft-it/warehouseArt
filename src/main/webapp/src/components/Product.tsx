@@ -1,18 +1,13 @@
-
 export type ProductType = {
 	id: number,
 	price: number,
-	amount: number,
+	ammount: number,
 	description: string
 }
 
 function Product(props: { prod: ProductType }) {
-
 	return (
-		<p>
-			Description: <br /> 
-			{props.prod.description} <br />
-		</p>
+		<h3> {props.prod.description} </h3>
 	);
 }
 
