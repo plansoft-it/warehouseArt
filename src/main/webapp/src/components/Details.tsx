@@ -11,7 +11,7 @@ function Details(props: { prod: ProductType, isOpen: boolean, onClose: () => voi
 				<ModalBody>
 					<b> Id: </b> {props.prod.id} <br />
 					<b> Price: </b> {props.prod.price} <br />
-					<b> Avaiable amount: </b> {props.prod.ammount} <br />
+					<b> Avaiable amount: </b> {props.prod.amount} <br />
 				</ModalBody>
 			</ModalContent>
 		</Modal>
