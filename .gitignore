@@ -37,3 +37,6 @@ hs_err_pid*
 .env.test.local
 .env.production.local
 
+# Database
+data/
+
