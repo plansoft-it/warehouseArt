@@ -40,7 +40,7 @@ public class ProductControllerTest {
 		mvc.perform(get("/products/" + productId)).andExpect(status().isOk())
 				.andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
 				.andExpect(jsonPath("$.description", is(product.getDescription())))
-				.andExpect(jsonPath("$.price", is((double)product.getPrice())))
+				.andExpect(jsonPath("$.price", is(product.getPrice()), Float.class))
 				.andExpect(jsonPath("$.amount", is(product.getAmount())));
 	}
 }
