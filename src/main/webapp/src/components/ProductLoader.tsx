@@ -7,7 +7,7 @@ function ProductLoader() {
 	const [products, setProducts] = useState([]);
 
 	useEffect(() => {
-		fetch("http://localhost:8080/products")
+		fetch(`http://${process.env.REACT_APP_BACKEND_HOST_API}/products`)
 			.then(response => {
 				if (!response.ok)
 					throw Error(response.statusText);
